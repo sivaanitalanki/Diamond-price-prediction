@@ -21,11 +21,10 @@ Deployment of the web application: Using Heroku, once deployed, it will become p
 
 Machine Learning Workflow (from Training to Deployment on PaaS)
 # Task 1 — Model Training and Validation
-Model Training and Validation is carried out in Python (Jupyter Notebooks) using PyCaret to develop a machine learning pipeline and train a regression model. I used the default preprocessing settings in PyCaret.  
+Model Training and Validation is carried out in Python (Jupyter Notebooks) to develop a machine learning pipeline and train a regression model.
 This transformed the dataset and came down to 65 features for training as compared to only 8 features in the original dataset.  
-Model training and validation in PyCaret:  
 Here the Root Mean Square Error (RMSE) and Mean Absolute Percentage Error (MAPE) have been significantly impacted.  
-Residual plot of the Linear Regression Model  
+Residual plot of the Random forest Regressor
 After building the model, I saved it as a file that can be transferred to and consumed by other applications:  
 Saving the model creates the entire transformation pipeline based on the configuration defined in the setup() function, inter-dependencies are taken care of too. The whole machine learning pipeline and the linear regression model is now saved in the save_model() function.  
 # Task 2 — Front End Web Application
